@@ -1,0 +1,38 @@
+{
+  "name": "dawnft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npx hardhat test",
+    "fork:testnet": "ganache-cli -f https://data-seed-prebsc-1-s1.binance.org:8545@18076878 --account='0xb436294d8b43b147831d385c6e7ff003ab4e659a746645d14070d9f1ca36497b,1000000000000000000000' --account='0x1170aceb7c6054c71123cd4449e67b73ec760c51f2e1e712a0c9be9037f63ac0,1000000000000000000000' --account='0x2337fbc8da0a4802d34ae55e4908ce8e3152bb91c098695c4b5219c11b0d68e7,1000000000000000000000' -q",
+    "deploy": "npx hardhat run scripts/0_deployment.js",
+    "deploy:fork": "npx hardhat run scripts/0_deployment.js --network local",
+    "deploy:testnet": "npx hardhat run scripts/0_deployment.js --network testnet"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
+    "@nomiclabs/hardhat-solhint": "^2.0.1",
+    "@nomiclabs/hardhat-truffle5": "^2.0.6",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.6.7",
+    "hardhat": "^2.9.6",
+    "signale": "^1.4.0",
+    "web3": "^1.7.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0",
+    "dotenv": "^16.0.1"
+  }
+}

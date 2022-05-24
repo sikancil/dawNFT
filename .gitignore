@@ -1,0 +1,14 @@
+.vscode
+__unused
+node_modules
+.env
+coverage
+coverage.json
+typechain
+
+#Hardhat files
+cache
+artifacts
+
+soljson*
+soljson-v0.8.10+commit.fc410830.js
